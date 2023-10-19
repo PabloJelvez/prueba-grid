@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-template {
+  display: grid;
+  height: 100vh;
+  color: white;
+  grid-template-areas: "navbar navbar navbar" "aside main main" "footer footer footer";
+}
+.grid-template .navbar {
+  grid-area: navbar;
+  background-color: aqua;
+}
+.grid-template .aside {
+  grid-area: aside;
+  background-color: bisque;
+}
+.grid-template .main {
+  grid-area: main;
+  background-color: black;
+}
+.grid-template .footer {
+  grid-area: footer;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */

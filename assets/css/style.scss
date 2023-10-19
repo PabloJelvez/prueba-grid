@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-template{
+    display: grid;
+    height: 100vh;
+    color: white;
+    grid-template-areas: 
+    'navbar navbar navbar'
+    'aside main main'
+    'footer footer footer';
+    
+    
+
+    .navbar{
+        grid-area: navbar;
+        background-color: aqua;
+
+    }
+    .aside{
+        grid-area: aside;
+        background-color: bisque;
+    }
+    .main{
+        grid-area: main;
+        background-color: black;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: red;;
+    }
+
+}
