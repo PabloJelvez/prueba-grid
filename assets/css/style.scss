@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -7,14 +9,13 @@
 .grid-template{
     display: grid;
     height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     grid-template-areas: 
     'navbar navbar navbar navbar'
     'aside main main main'
     'aside main main main'
     'footer footer footer footer';
-    
-    
-
     .navbar{
         grid-area: navbar;
         background-color: rgb(37, 36, 111);
@@ -73,6 +74,8 @@
                     padding: 5px;
                     img{
                         height: 380px;
+                        width: 380px;
+                    
                     }
                   
                  }
