@@ -7,30 +7,122 @@
 .grid-template{
     display: grid;
     height: 100vh;
-    color: white;
     grid-template-areas: 
-    'navbar navbar navbar'
-    'aside main main'
-    'footer footer footer';
+    'navbar navbar navbar navbar'
+    'aside main main main'
+    'aside main main main'
+    'footer footer footer footer';
     
     
 
     .navbar{
         grid-area: navbar;
-        background-color: aqua;
-
-    }
+        background-color: rgb(37, 36, 111);
+        color: white;
+        height: 55px;
+       
+        .tittle{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+           padding: 1em;
+        }
+        
+     }
     .aside{
         grid-area: aside;
-        background-color: bisque;
+        background-color:rgb(200, 198, 198);
+        width: 15vw;
+        .asideBar{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 1em;
+            h2{
+                padding-bottom: 15px;
+            }
+            p{
+                padding: 7px;
+            }
+            span{
+                color: grey;
+            }
+          
+        }
     }
     .main{
         grid-area: main;
-        background-color: black;
+        background-color:rgb(200, 198, 198);
+        width: 84vw;
+        padding-bottom: 10px;
+       
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-top: 10px;
+            gap: 25px;
+            .card{
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .imgCard{
+                    display: flex;
+                    justify-content: center;
+                    padding: 5px;
+                    img{
+                        height: 380px;
+                    }
+                  
+                 }
+                .textCard{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 5px;
+                        h1{
+                            display: flex;
+                            justify-content: center;
+                            padding: 5px;
+                        }
+                        p{
+                            display: flex;
+                            justify-content: center;
+                            padding: 8px;
+                          
+                        }
+                 }
+                 .buttonCard{
+                    button{
+                        background-color: rgb(37, 36, 111);
+                        color: white;
+                        width: 100%;
+                        height: 35px;
+                    }
+                    button:hover{
+                        background-color: blue;
+                    }
+                    button:focus{
+                        background-color: mediumblue;
+                    }
+                 }
+
+            }
+           
+        }
     }
     .footer{
         grid-area: footer;
-        background-color: red;;
+        background-color: white;
+        color: black;
+        height: 55px;
+        .footerTittle{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 1em;
+        }
     }
 
 }
